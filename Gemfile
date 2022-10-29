@@ -73,3 +73,4 @@ end
 gem "devise", "~> 4.8"
 gem 'devise_token_auth'
 gem 'cancancan'
+gem 'pg'

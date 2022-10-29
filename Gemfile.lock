@@ -73,6 +73,7 @@ GEM
     bootsnap (1.13.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    cancancan (3.4.0)
     capybara (3.37.1)
       addressable
       matrix
@@ -94,6 +95,10 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise_token_auth (1.2.1)
+      bcrypt (~> 3.0)
+      devise (> 3.5.2, < 5)
+      rails (>= 4.2.0, < 7.1)
     erubi (1.11.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -220,9 +225,11 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  cancancan
   capybara
   debug
   devise (~> 4.8)
+  devise_token_auth
   importmap-rails
   jbuilder
   puma (~> 5.0)

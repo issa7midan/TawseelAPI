@@ -71,3 +71,5 @@ group :test do
 end
 
 gem "devise", "~> 4.8"
+gem 'devise_token_auth'
+gem 'cancancan'

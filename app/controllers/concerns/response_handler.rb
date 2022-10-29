@@ -1,7 +1,7 @@
 module ResponseHandler
 
   def result(code: 400, state: nil, result: [])
-    render json: [code: code, fullCode: error_state(state), reponse: error_state_description(state), result: [result]]
+    render json: ({code: code, fullCode: error_state(state), reponse: error_state_description(state), result: result})
   end
 
   private 

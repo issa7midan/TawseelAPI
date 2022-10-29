@@ -5,9 +5,9 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      render json: ([code: 200, fullCode: '200.200.200', reponse: 'test', result: [@user]])
+      result(code: 200, result: [@user])
     else
-      render json: ({error_state[:unauthorized]})
+      result(state: :unauthorized)
     end
   end
 

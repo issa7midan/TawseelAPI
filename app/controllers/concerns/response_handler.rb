@@ -71,7 +71,7 @@ module ResponseHandler
 
   def row_not_found
     row_not_found_code = ERROR + '.405'
-  end 
+  end
 
   def row_already_exists
     row_already_exists_code = ERROR + '.402'
